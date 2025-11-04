@@ -53,8 +53,21 @@ test('Verify that Consult with all of our doctors section loads perfectly',async
   await expect(page.getByText("Cough & Cold")).toBeVisible();
   await expect(page.getByText("Skin Problems")).toBeVisible();
   await expect(page.getByText("Stomach Issue")).toBeVisible();
-
-
 });
+
+//TC-005 Verify that Book an appointment for an in-clinic or in-house help section loads perfectly
+test("Verify that 'Book an appointment for an in-clinic or in-house help' section loads perfectly",async({page}) =>{
+  await expect(page.getByText("Book an appointment for an in-clinic or in-house help")).toBeVisible();
+  await expect(page.getByText("Find professionals across all specialities")).toBeVisible();
+  await expect(page.getByText("Gynaecologist / Obstetrician")).toBeVisible();
+  await expect(page.getByAltText("Gynaecologist / Obstetrician")).toBeVisible(); 
+  await expect(page.getByText("Explore for women’s health, pregnancy and infertility treatment.")).toBeVisible();
+
+  ///Hello Worlds
+   await expect(page.getByText("Gynaecologist / Obstetrician")).toBeVisible();
+  await expect(page.getByAltText("Gynaecologist / Obstetrician")).toBeVisible(); 
+  await expect(page.getByText("Explore for women’s health, pregnancy and infertility treatment.")).toBeVisible();
+
+})
   
 });
