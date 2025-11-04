@@ -63,11 +63,6 @@ test("Verify that 'Book an appointment for an in-clinic or in-house help' sectio
   await expect(page.getByAltText("Gynaecologist / Obstetrician")).toBeVisible(); 
   await expect(page.getByText("Explore for women’s health, pregnancy and infertility treatment.")).toBeVisible();
 
-  ///Hello Worlds
-   await expect(page.getByText("Gynaecologist / Obstetrician")).toBeVisible();
-  await expect(page.getByAltText("Gynaecologist / Obstetrician")).toBeVisible(); 
-  await expect(page.getByText("Explore for women’s health, pregnancy and infertility treatment.")).toBeVisible();
-
 })
   
 });
